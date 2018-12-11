@@ -1,0 +1,905 @@
+<!doctype html> <html>
+
+<style>
+
+body {
+margin: 0;
+padding: 0;
+display: grid;
+grid-template-columns: 7% 15% 15% 7% 49% 7%;
+grid-template-rows: 30px 150px 35px 55px 180px 180px 55px 360px 55px 30px;
+font-family: AppleGothic, sans-serif;
+}
+
+table {
+    border: 0px solid white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+  color: white;
+}
+
+th {
+    height: 35px;
+}
+
+h2 {
+  color: #6EA8C4;
+  font-family: AppleGothic, sans-serif;
+}
+
+p {
+  text-align: right;
+  color: white;
+  font-family: AppleGothic, sans-serif;
+  text-indent: 10px;
+}
+
+.alert {
+  grid-column: 1 / 7;
+  background-color: yellow;
+  grid-row: 1 / 2;
+}
+
+.header {
+grid-column: 1 / 7;
+grid-row: 2 / 3;
+margin:0;
+}
+
+.nav {
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+  margin:0;
+  background-color: #6EA8C4;
+}
+
+.whitespace1row {
+  grid-column: 2 / 7;
+  grid-row: 4 / 5;
+  margin:0;
+}
+
+.whitespace1col {
+  grid-column: 1 / 2;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsIcon1 {
+margin: 0;
+background-color: yellow;
+grid-column: 2 / 3;
+grid-row: 5 / 6;
+}
+
+.rNewsIcon2 {
+margin: 0;
+background-color: red;
+grid-column: 3 / 4;
+grid-row: 5 / 6;
+}
+
+.rNewsIcon3 {
+margin: 0;
+background-color: rebeccapurple;
+grid-column: 2 / 3;
+grid-row: 6 / 7;
+}
+
+.rNewsIcon4 {
+margin: 0;
+background-color: green;
+grid-column: 3 / 4;
+grid-row: 6 / 7;
+}
+
+.rNewA2 {
+background-color: hotpink;
+grid-column: 4 / 5;
+grid-row: 5 / 6;
+}
+
+.whitespace2col {
+  grid-column: 4 / 5;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsGallery {
+  background-color: forestgreen;
+  grid-column: 5 / 6;
+  grid-row: 5 / 7;
+}
+
+.whitespace3col {
+  grid-column: 6 / 7;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.whitespace2row {
+  grid-column: 2 / 7;
+  grid-row: 7 / 8;
+  margin:0;
+}
+
+.quickLinks {
+  background-color: blue;
+  grid-column: 2 / 4;
+  grid-row: 8 / 9;
+  margin:0;
+}
+
+.events {
+  background-color: pink;
+  grid-column: 5 / 6;
+  grid-row: 8 / 9;
+  margin:0;
+}
+
+.footer {
+  background-color: #99221F;
+  grid-column: 1 / 7;
+  grid-row: 10 / 11;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* changed sizing of elements to fit well on a 4k monitor */
+@media only screen and (max-width:4096px) and (min-width: 3500px) {
+body {
+margin: 0;
+padding: 0;
+display: grid;
+grid-template-columns: 7% 15% 15% 7% 49% 7%;;
+grid-template-rows: 100px 500px 80px 80px 600px 600px 100px 1200px 100px 80px;
+font-family: AppleGothic, sans-serif;
+}
+
+table {
+    border: 0px solid white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+  color: white;
+}
+
+th {
+    height: 80px;
+}
+
+.title {
+}
+
+li {
+}
+
+.btext {
+}
+
+.alert {
+  grid-column: 1 / 7;
+  background-color: yellow;
+  grid-row: 1 / 2;
+}
+
+.header {
+grid-column: 1 / 7;
+grid-row: 2 / 3;
+margin:0;
+}
+
+.nav {
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+  margin:0;
+  background-color: #6EA8C4;
+}
+
+.whitespace1row {
+  grid-column: 2 / 7;
+  grid-row: 4 / 5;
+  margin:0;
+}
+
+.whitespace1col {
+  grid-column: 1 / 2;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsIcon1 {
+margin: 0;
+background-color: yellow;
+grid-column: 2 / 3;
+grid-row: 5 / 6;
+}
+
+.rNewsIcon2 {
+margin: 0;
+background-color: red;
+grid-column: 3 / 4;
+grid-row: 5 / 6;
+}
+
+.rNewsIcon3 {
+margin: 0;
+background-color: rebeccapurple;
+grid-column: 2 / 3;
+grid-row: 6 / 7;
+}
+
+.rNewsIcon4 {
+margin: 0;
+background-color: green;
+grid-column: 3 / 4;
+grid-row: 6 / 7;
+}
+
+.rNewA2 {
+background-color: hotpink;
+grid-column: 4 / 5;
+grid-row: 5 / 6;
+}
+
+.whitespace2col {
+  grid-column: 4 / 5;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsGallery {
+  background-color: forestgreen;
+  grid-column: 5 / 6;
+  grid-row: 5 / 7;
+}
+
+.whitespace3col {
+  grid-column: 6 / 7;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.whitespace2row {
+  grid-column: 2 / 7;
+  grid-row: 7 / 8;
+  margin:0;
+}
+
+.quickLinks {
+  background-color: blue;
+  grid-column: 2 / 4;
+  grid-row: 8 / 9;
+  margin:0;
+}
+
+.events {
+  background-color: pink;
+  grid-column: 5 / 6;
+  grid-row: 8 / 9;
+  margin:0;
+}
+
+.footer {
+  background-color: #99221F;
+  grid-column: 1 / 7;
+  grid-row: 10 / 11;
+  margin:0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}}
+
+/* changed grid and sizing of elements to fit iPhoneX/tablet */
+@media (max-width: 1100px) {
+
+  body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 30px 120px 35px 55px 360px 55px 300px 300px 55px 400px
+  55px 600px 55px 30px;
+  font-family: AppleGothic, sans-serif;
+}
+
+table {
+    border: 0px solid white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+  color: white;
+}
+
+th {
+    height: 35px;
+}
+.alert {
+  grid-column: 1 / 5;
+  background-color: yellow;
+  grid-row: 1 / 2;
+}
+
+.header {
+grid-column: 1 / 5;
+grid-row: 2 / 3;
+margin:0;
+}
+
+.nav {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  margin:0;
+  background-color: #6EA8C4;
+}
+
+.whitespace1row {
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+  margin:0;
+}
+
+.whitespace1col {
+  grid-column: 1 / 2;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsGallery {
+  background-color: forestgreen;
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+.whitespace2row {
+  grid-column: 2 / 5;
+  grid-row: 6 / 7;
+  margin:0;
+}
+
+.whitespace2col {
+  grid-column: 4 / 5;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsIcon1 {
+margin: 0;
+background-color: yellow;
+grid-column: 2 / 3;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon2 {
+margin: 0;
+background-color: red;
+grid-column: 3 / 4;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon3 {
+margin: 0;
+background-color: rebeccapurple;
+grid-column: 2 / 3;
+grid-row: 8 / 9;
+}
+
+.rNewsIcon4 {
+margin: 0;
+background-color: green;
+grid-column: 3 / 4;
+grid-row: 8 / 9;
+}
+
+.whitespace3col {
+  grid-column: 1 / 5;
+  grid-row: 9 / 10;
+  margin:0;
+}
+
+.quickLinks {
+  background-color: blue;
+  grid-column: 2 / 4;
+  grid-row: 12 / 13;
+  margin:0;
+}
+
+.events {
+  background-color: pink;
+  grid-column: 2 / 4;
+  grid-row: 10 / 11;
+  margin:0;
+}
+
+.footer {
+  background-color: #99221F;
+  grid-column: 1 / 5;
+  grid-row: 14 / 15;
+  margin:0;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+}
+
+@media (max-width: 900px) {
+  body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 30px 110px 35px 55px 300px 55px 200px 200px 55px 400px
+  55px 530px 55px 30px;
+  font-family: AppleGothic, sans-serif;
+}
+
+table {
+    border: 0px solid white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+  color: white;
+}
+
+th {
+    height: 35px;
+}
+
+.alert {
+  grid-column: 1 / 5;
+  background-color: yellow;
+  grid-row: 1 / 2;
+}
+
+.header {
+grid-column: 1 / 5;
+grid-row: 2 / 3;
+margin:0;
+}
+
+.nav {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  margin:0;
+  background-color: #6EA8C4;
+}
+
+.whitespace1row {
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+  margin:0;
+}
+
+.whitespace1col {
+  grid-column: 1 / 2;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsGallery {
+  background-color: forestgreen;
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+.whitespace2row {
+  grid-column: 2 / 5;
+  grid-row: 6 / 7;
+  margin:0;
+}
+
+.whitespace2col {
+  grid-column: 4 / 5;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsIcon1 {
+margin: 0;
+background-color: yellow;
+grid-column: 2 / 3;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon2 {
+margin: 0;
+background-color: red;
+grid-column: 3 / 4;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon3 {
+margin: 0;
+background-color: rebeccapurple;
+grid-column: 2 / 3;
+grid-row: 8 / 9;
+}
+
+.rNewsIcon4 {
+margin: 0;
+background-color: green;
+grid-column: 3 / 4;
+grid-row: 8 / 9;
+}
+
+.whitespace3col {
+  grid-column: 1 / 5;
+  grid-row: 9 / 10;
+  margin:0;
+}
+
+.quickLinks {
+  background-color: blue;
+  grid-column: 2 / 4;
+  grid-row: 12 / 13;
+  margin:0;
+}
+
+.events {
+  background-color: pink;
+  grid-column: 2 / 4;
+  grid-row: 10 / 11;
+  margin:0;
+}
+
+.footer {
+  background-color: #99221F;
+  grid-column: 1 / 5;
+  grid-row: 14 / 15;
+  margin:0;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+}
+
+@media (max-width: 650px) {
+  body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 30px 100px 35px 55px 250px 55px 150px 150px 55px 360px 55px 450px 55px 30px;
+  font-family: AppleGothic, sans-serif;
+}
+
+table {
+    border: 0px solid white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+  color: white;
+}
+
+th {
+    height: 35px;
+}
+
+.alert {
+  grid-column: 1 / 5;
+  background-color: yellow;
+  grid-row: 1 / 2;
+}
+
+.header {
+grid-column: 1 / 5;
+grid-row: 2 / 3;
+margin:0;
+}
+
+.nav {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  margin:0;
+  background-color: #6EA8C4;
+}
+
+.whitespace1row {
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+  margin:0;
+}
+
+.whitespace1col {
+  grid-column: 1 / 2;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsGallery {
+  background-color: forestgreen;
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+.whitespace2row {
+  grid-column: 2 / 5;
+  grid-row: 6 / 7;
+  margin:0;
+}
+
+.whitespace2col {
+  grid-column: 4 / 5;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsIcon1 {
+margin: 0;
+background-color: yellow;
+grid-column: 2 / 3;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon2 {
+margin: 0;
+background-color: red;
+grid-column: 3 / 4;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon3 {
+margin: 0;
+background-color: rebeccapurple;
+grid-column: 2 / 3;
+grid-row: 8 / 9;
+}
+
+.rNewsIcon4 {
+margin: 0;
+background-color: green;
+grid-column: 3 / 4;
+grid-row: 8 / 9;
+}
+
+.whitespace3col {
+  grid-column: 1 / 5;
+  grid-row: 9 / 10;
+  margin:0;
+}
+
+.quickLinks {
+  background-color: blue;
+  grid-column: 2 / 4;
+  grid-row: 12 / 13;
+  margin:0;
+}
+
+.events {
+  background-color: pink;
+  grid-column: 2 / 4;
+  grid-row: 10 / 11;
+  margin:0;
+}
+
+.footer {
+  background-color: #99221F;
+  grid-column: 1 / 5;
+  grid-row: 14 / 15;
+  margin:0;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+}
+
+@media (max-width: 500px) {
+  body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 30px 80px 35px 55px 200px 55px 100px 100px 55px 200px
+  55px 300px 55px 30px;
+  font-family: AppleGothic, sans-serif;
+}
+
+table {
+    border: 0px solid white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+  color: white;
+}
+
+th {
+    height: 35px;
+}
+
+.alert {
+  grid-column: 1 / 5;
+  background-color: yellow;
+  grid-row: 1 / 2;
+}
+
+.header {
+grid-column: 1 / 5;
+grid-row: 2 / 3;
+margin:0;
+}
+
+.nav {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  margin:0;
+  background-color: #6EA8C4;
+}
+
+.whitespace1row {
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+  margin:0;
+}
+
+.whitespace1col {
+  grid-column: 1 / 2;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsGallery {
+  background-color: forestgreen;
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+.whitespace2row {
+  grid-column: 2 / 5;
+  grid-row: 6 / 7;
+  margin:0;
+}
+
+.whitespace2col {
+  grid-column: 4 / 5;
+  grid-row: 4 / 10;
+  margin:0;
+}
+
+.rNewsIcon1 {
+margin: 0;
+background-color: yellow;
+grid-column: 2 / 3;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon2 {
+margin: 0;
+background-color: red;
+grid-column: 3 / 4;
+grid-row: 7 / 8;
+}
+
+.rNewsIcon3 {
+margin: 0;
+background-color: rebeccapurple;
+grid-column: 2 / 3;
+grid-row: 8 / 9;
+}
+
+.rNewsIcon4 {
+margin: 0;
+background-color: green;
+grid-column: 3 / 4;
+grid-row: 8 / 9;
+}
+
+.whitespace3col {
+  grid-column: 1 / 5;
+  grid-row: 9 / 10;
+  margin:0;
+}
+
+.quickLinks {
+  background-color: blue;
+  grid-column: 2 / 4;
+  grid-row: 12 / 13;
+  margin:0;
+}
+
+.events {
+  background-color: pink;
+  grid-column: 2 / 4;
+  grid-row: 10 / 11;
+  margin:0;
+}
+
+.footer {
+  background-color: #99221F;
+  grid-column: 1 / 5;
+  grid-row: 14 / 15;
+  margin:0;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+
+}
+
+</style>
+<head>
+</head>
+<body>
+
+<div class="alert">
+  Alert! School closed due to severe flood warnings.
+  </div>
+<div class="header">
+  <img src='images/CMSHomeHeader.jpg'>
+  </div>
+<div class="nav ">
+  <table>
+  <tr>
+    <th>Home</th>
+    <th>About/Contact</th>
+    <th>Students ></th>
+    <th>Parents ></th>
+    <th>Schools ></th>
+    <th>Get Involved ></th>
+    <th>Departments ></th>
+  </tr>
+</table>
+</div>
+<div class="whitespace1row">
+  <h2>
+    Recent News
+  </h2>
+</div>
+<div class="whitespace1col">
+  </div>
+<div class="rNewsIcon1">
+  <img src='images/rNews1.jpg'> </div>
+<div class="rNewsIcon2">
+  <img src='images/rNews2.jpg'> </div>
+<div class="rNewsIcon3">
+  <img src='images/rNews3.jpg'> </div>
+<div class="rNewsIcon4">
+  <img src='images/rNews4.jpg'> </div>
+<div class="whitespace2col">
+   </div>
+<div class="rNewsGallery">
+  <img src='images/NASCARBanner.jpg'> </div>
+<div class="whitespace3col">
+  </div>
+<div class="whitespace2row">
+  <h2>
+    Quick links
+  </h2>
+ </div>
+<div class="quickLinks">
+  <img src='images/QuickLinks.jpg'> </div>
+<div class="events">
+  <img src='images/Events.jpg'> </div>
+<div class="footer">
+  <p>
+    CMS > Home
+  </p>
+</div>
+
+</body>
+</html>
