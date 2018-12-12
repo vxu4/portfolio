@@ -9,6 +9,10 @@ img {
  margin:0;
 }
 
+p {
+  font-size:18px;
+}
+
 h1{
   font-weight: normal;
   color: #EA4E34;

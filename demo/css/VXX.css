@@ -204,3 +204,8 @@ td:nth-child(odd) {
     grid-row: 16/17;
     color: #4671EE;
   }
+.lilRed{
+  grid-column: 4/11;
+  padding-left:15px;
+  grid-row: 4/5;
+}

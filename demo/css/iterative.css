@@ -1,8 +1,12 @@
 body{
-  font:normal 75% Arial, Helvetica, sans-serif;
+  font:normal 100% Arial, Helvetica, sans-serif;
 	display:grid;
 	grid-template-columns: 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7%  ;
-	grid-template-rows:  120px 5px 40px 80px 80px 500px 80px 150px 400px 400px 400px 40px 800px;
+	grid-template-rows:  120px 5px 40px 80px 80px 500px 140px 270px 400px 400px 400px 40px 800px;
+}
+
+p {
+  font-size: 18px;
 }
 
 img {
@@ -137,14 +141,14 @@ td:nth-child(odd) {
   grid-column: 4/11;
   align: center;
   grid-row: 7/8;
-  margin-top: 40px;
+  margin-top: 80px;
   color: #4671EE;
 }
 
 .subtitle3 {
   grid-column: 4/11;
   grid-row: 8/9;
-  margin-top: 80px;
+  margin-top: 160px;
   color: #4671EE;
 }
 
