@@ -23,18 +23,22 @@ img {
   grid-column: 1/13;
   grid-row: 2/3;
   padding-top: 50px;
-  padding-left: 75px;
+  padding-left: 90px;
 }
 
 .uiuxLogo {
+  padding-left: 20px;
+
   padding-top: 10px;
   grid-column: 2/4;
   grid-row: 1/2;
   max-width: 100px;
+  opacity: 1.0;
 }
 
 .artLogo {
   padding-top: 10px;
+  padding-left: 20px;
 
   grid-column: 4/6;
   grid-row: 1/2;
@@ -43,14 +47,14 @@ img {
 
 .vxxLogo {
   grid-column: 6/10;
-  padding-left: 40px;
+  padding-left: 60px;
   grid-row: 1/2;
   max-width: 100px;
 }
 
 .videoLogo {
   padding-top: 10px;
-  padding-left: 75px;
+  padding-left: 95px;
   grid-column: 9/11;
   grid-row: 1/2;
   max-width: 100px;
@@ -58,7 +62,7 @@ img {
 
 .codingLogo {
   padding-top: 14px;
-  padding-left:80px;
+  padding-left:100px;
   grid-column: 11/14;
   grid-row: 1/2;
   max-width: 100px;
@@ -68,7 +72,7 @@ img {
   padding-top: 50px;
   grid-column: 2/6;
   grid-row: 5/6;
-  padding-left:35px;
+  padding-left:55px;
 
 }
 
@@ -76,19 +80,19 @@ img {
   padding-top: 50px;
   grid-column: 7/12;
   grid-row: 5/6;
-  padding-left:65px;
+  padding-left:85px;
 }
 
 .iterIcon {
   padding-top: 140px;
   grid-column:  7/12;
   grid-row: 7/8;
- padding-left:65px;
+ padding-left:85px;
 }
 
 .abIcon {
   padding-top: 140px;
   grid-column:  2/6;
   grid-row: 7/8;
-  padding-left:35px;
+  padding-left:55px;
 }
