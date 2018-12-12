@@ -1,0 +1,67 @@
+header {
+	padding-left: 40px;
+	padding-top: 20px;
+	grid-column: 1/6;
+	grid-row: 1/2;
+}
+
+h1 {
+	color:red;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 5vw 37.5vw 5vw 37.5vw 5vw;
+	grid-template-rows: 14vw 25vw 25vw;
+}
+/* Feel free to modify anything in this file.*/
+.vendor-wrapper1 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	justify-content: left;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.vendor-wrapper2 {
+	grid-column: 4/5;
+	grid-row: 2/3;
+	justify-content: left;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.vendor-wrapper3 {
+	grid-column: 2/3;
+	grid-row: 3/4;
+	justify-content: left;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.vendor-wrapper4 {
+	grid-column: 4/5;
+	grid-row: 3/4;
+	justify-content: left;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.vendor-photo {
+	max-width: : 200px;
+	max-height: 150px;
+	padding-right: 20px;
+}
+
+
+.vendor-book-button.btn-primary {
+    background-color: red;
+}
+
+.vendor-book-button {
+	font-size: 2em;
+	background-color: red;
+}
