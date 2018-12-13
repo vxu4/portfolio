@@ -69,6 +69,7 @@ canvas{
    filter: alpha(opacity=50);
  }
 
+
  a:hover {
 		opacity: 1.0;
 	 filter: alpha(opacity=100);

@@ -2,7 +2,7 @@ body{
   font:normal 100% Arial, Helvetica, sans-serif;
 	display:grid;
 	grid-template-columns: 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7%  ;
-	grid-template-rows:  120px 5px 40px 80px 80px 500px 140px 270px 400px 400px 400px 40px 800px;
+	grid-template-rows:  120px 5px 40px 80px 80px 500px 350px 290px 400px 400px 400px 40px 800px;
 }
 
 p {
