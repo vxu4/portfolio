@@ -102,7 +102,21 @@ td:nth-child(odd) {
 
  .lilRed {
    padding-top: 40px;
-   padding-left:30px;
+   padding-left:20px;
    grid-column: 2/5;
+   grid-row: 4/5;
+ }
+
+ .publicPrivate {
+   padding-top: 40px;
+   padding-left:7px;
+   grid-column: 6/8;
+   grid-row: 4/5;
+ }
+
+ .redReflection {
+   padding-top: 40px;
+   padding-left:100px;
+   grid-column: 9/12;
    grid-row: 4/5;
  }
