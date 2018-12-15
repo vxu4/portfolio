@@ -2,7 +2,7 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
 	display:grid;
 	grid-template-columns: 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7%  ;
-	grid-template-rows:  120px 5px 40px 60px 460px 120px ;
+	grid-template-rows:  120px 5px 40px 60px 620px 400px 200px 500px 200px 380px 200px 490px 200px;
 }
 
 img {
@@ -74,7 +74,6 @@ td:nth-child(odd) {
  .artLogo {
    padding-top: 10px;
    padding-left: 20px;
-
    grid-column: 4/6;
    grid-row: 1/2;
    max-width: 100px;
@@ -131,6 +130,61 @@ td:nth-child(odd) {
   grid-row: 4/7;
   font-size: 15px;
   margin-top: 40px;
-
   color: #F9C41E;
+}
+
+.filter1 {
+  padding-left:30px;
+  grid-column: 4/12;
+  grid-row: 6/7;
+}
+
+.subtitle3 {
+  padding-left:30px;
+  grid-column: 4/11;
+  grid-row: 7/8;
+  color: #EA4E34;
+
+}
+
+.filter2{
+  padding-left:30px;
+  grid-column: 4/13;
+  grid-row: 8/9;
+}
+
+.subtitle4 {
+  padding-left:30px;
+  grid-column: 4/11;
+  grid-row: 9/10;
+  color: #EA4E34;
+
+}
+
+.sort {
+  padding-left:30px;
+  grid-column: 4/13;
+  grid-row: 10/11;
+}
+
+.subtitle5 {
+  padding-left:30px;
+  grid-column: 4/11;
+  grid-row: 11/12;
+  color: #EA4E34;
+
+}
+
+.search {
+  padding-left:30px;
+  grid-column: 4/13;
+  grid-row: 12/13;
+}
+
+.subtitle6 {
+  padding-left:30px;
+  grid-column: 4/11;
+  grid-row: 13/14;
+  color: #EA4E34;
+
 }

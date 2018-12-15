@@ -2,7 +2,7 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
 	display:grid;
 	grid-template-columns: 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7%  ;
-	grid-template-rows:  120px 5px 100px 400px 500px 700px 700px 700px;
+	grid-template-rows:  120px 5px 150px 750px 800px 870px 870px 870px;
 }
 
 p {
@@ -91,30 +91,30 @@ h2{
  .a {
    padding-top: 40px;
    padding-left:70px;
-   grid-column: 5/8;
+   grid-column: 3/8;
    grid-row: 4/5;
  }
 
  .b {
-   padding-left:70px;
-   grid-column: 5/8;
+   padding-left:120px;
+   grid-column: 3/8;
    grid-row: 5/6;
  }
 
  .c {
-   padding-left:70px;
-   grid-column: 5/8;
+   padding-left:115px;
+   grid-column: 4/8;
    grid-row: 6/7;
  }
 
  .d {
-   padding-left:70px;
-   grid-column: 5/8;
+   padding-left:115px;
+   grid-column: 4/8;
    grid-row: 7/8;
  }
 
  .e {
-   padding-left:70px;
-   grid-column: 5/8;
+   padding-left:115px;
+   grid-column: 4/8;
    grid-row: 8/9;
  }
