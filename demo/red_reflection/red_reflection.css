@@ -2,7 +2,7 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
 	display:grid;
 	grid-template-columns: 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7%  ;
-	grid-template-rows:  120px 5px 150px 950px 800px 950px 800px 800px 800px 800px;
+	grid-template-rows:  120px 5px 150px 1100px 800px 950px 800px 800px 800px 800px;
 }
 
 p {
@@ -88,16 +88,17 @@ h2{
    max-width: 100px;
  }
 
- .a {
-   padding-top: 40px;
-   padding-left:90px;
-   grid-column: 4/8;
+ .vertVid {
+   padding-top: 60px;
+   padding-left:40px;
+   grid-column: 5/8;
    grid-row: 4/5;
  }
 
- .b {
-   padding-left:120px;
-   grid-column: 3/8;
+ .horizVid {
+   padding-top: 0px;
+   padding-left:40px;
+   grid-column: 4/8;
    grid-row: 5/6;
  }
 
